@@ -1,0 +1,39 @@
+name: Update Maritime Data
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Every 30 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: pip install requests
+      
+      - name: Fetch ship data
+        env:
+          AISSTREAM_API_KEY: ${{ secrets.AISSTREAM_API_KEY }}
+        run: python fetch-ships.py
+      
+      - name: Fetch incident data
+        run: python fetch-incidents.py
+      
+      - name: Commit updates
+        run: |
+          git config --global user.name 'Maritime Bot'
+          git config --global user.email 'maritime@tracker.com'
+          git add *.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update maritime data"
+          git push
