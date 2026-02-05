@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Maritime Tracker 🚢</title>
+    <title>Maritime Tracker 🚢 | Live Ships & Incidents</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <style>
@@ -17,11 +17,20 @@
             padding: 20px;
             text-align: center;
             border-bottom: 3px solid #00d4ff;
+            box-shadow: 0 2px 10px rgba(0,212,255,0.3);
         }
         h1 { 
             font-size: 2em;
             text-shadow: 0 0 20px #00d4ff;
             margin-bottom: 10px;
+        }
+        .tagline {
+            color: #0099cc;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .controls {
+            margin-top: 15px;
         }
         .btn {
             background: #00d4ff;
@@ -35,40 +44,83 @@
             font-weight: bold;
             margin: 5px;
         }
-        .btn:disabled { background: #004466; }
+        .btn:hover { background: #00aacc; }
+        .btn:disabled { background: #004466; color: #666; cursor: not-allowed; }
+        .btn.toggle-off { background: #666; }
         
         #map { 
-            height: 500px;
+            height: 600px;
             width: 100%;
-            background: #001a33;
         }
-        .info {
+        .info-panel {
             background: #002147;
             padding: 20px;
-            text-align: center;
             border-top: 3px solid #00d4ff;
         }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
         .stat {
-            display: inline-block;
-            margin: 0 20px;
+            text-align: center;
+            padding: 10px;
+            min-width: 120px;
         }
         .stat-number {
             font-size: 2em;
             color: #00d4ff;
+            text-shadow: 0 0 10px #00d4ff;
         }
+        .stat-label {
+            color: #0099cc;
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+        .legend {
+            background: #002147;
+            padding: 15px;
+            text-align: center;
+            border-top: 2px solid #004466;
+        }
+        .legend-item {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 0.9em;
+        }
+        .legend-icon {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .ship-icon { background: #00d4ff; }
+        .incident-icon { background: #ff3333; }
+        
         footer {
             text-align: center;
             padding: 20px;
             color: #0099cc;
+            font-size: 0.8em;
+            background: #001a33;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 1.5em; }
+            #map { height: 400px; }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>⚓ MARITIME TRACKER 🚢</h1>
-        <p style="color: #0099cc; margin: 10px 0;">Live Ships & Incidents</p>
-        <button class="btn" onclick="window.updateShips()">UPDATE SHIPS</button>
-        <button class="btn" onclick="window.updateIncidents()">UPDATE INCIDENTS</button>
+        <p class="tagline">Live Ship Tracking & Maritime Incidents from Real AIS & ASAM Data</p>
+        <div class="controls">
+            <button class="btn" onclick="window.loadAllData()">REFRESH DATA</button>
+            <button class="btn" id="toggleShips" onclick="window.toggleShips()">SHIPS: ON</button>
+            <button class="btn" id="toggleIncidents" onclick="window.toggleIncidents()">INCIDENTS: ON</button>
+        </div>
         <div id="status" style="color: #0099cc; margin-top: 10px; font-size: 0.9em;">
             Loading map...
         </div>
@@ -76,20 +128,42 @@
 
     <div id="map"></div>
 
-    <div class="info">
-        <div class="stat">
-            <div class="stat-number" id="shipCount">0</div>
-            <div style="color: #0099cc;">Ships</div>
+    <div class="info-panel">
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number" id="shipCount">-</div>
+                <div class="stat-label">VESSELS TRACKED</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="incidentCount">-</div>
+                <div class="stat-label">ACTIVE INCIDENTS</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="lastUpdate">--:--</div>
+                <div class="stat-label">LAST UPDATE</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">AIS+ASAM</div>
+                <div class="stat-label">DATA SOURCES</div>
+            </div>
         </div>
-        <div class="stat">
-            <div class="stat-number" id="incidentCount">0</div>
-            <div style="color: #0099cc;">Incidents</div>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item">
+            <span class="legend-icon ship-icon"></span>
+            Active Vessels (Live AIS)
+        </div>
+        <div class="legend-item">
+            <span class="legend-icon incident-icon"></span>
+            Security Incidents (ASAM)
         </div>
     </div>
 
     <footer>
-        <p>Maritime Tracking & Incident Reports</p>
-        <p>🔱 Built by TridentIntelFree</p>
+        <p>Real-time data from AIS Ship Tracking + ASAM Maritime Security Database</p>
+        <p>Auto-updates every 30 minutes | Click REFRESH for latest data</p>
+        <p style="margin-top: 10px;">🔱 Built by TridentIntelFree</p>
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -97,26 +171,27 @@
         var map = null;
         var shipMarkers = [];
         var incidentMarkers = [];
+        var showShips = true;
+        var showIncidents = true;
+        var shipsData = null;
+        var incidentsData = null;
         
-        // Wait for page to fully load
+        // Initialize map on page load
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('Initializing map...');
+            console.log('Initializing maritime tracker...');
             
             try {
-                // Initialize map
                 map = L.map('map').setView([25, -30], 3);
                 
-                // Add tile layer
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    maxZoom: 19,
-                    attribution: '© OpenStreetMap'
+                L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                    attribution: '© OpenStreetMap, © CARTO',
+                    maxZoom: 19
                 }).addTo(map);
                 
-                document.getElementById('status').textContent = '✅ Map loaded - Click buttons to add data';
-                console.log('Map initialized successfully');
+                document.getElementById('status').textContent = '✅ Map loaded - Loading real data...';
                 
-                // Add initial data
-                loadInitialData();
+                // Load real data
+                loadAllData();
                 
             } catch (error) {
                 console.error('Map error:', error);
@@ -124,35 +199,95 @@
             }
         });
         
-        function loadInitialData() {
-            // Add sample ships
-            var ships = [
-                {lat: 40.7, lng: -74.0, name: "ATLANTIC CARGO"},
-                {lat: 51.5, lng: -0.1, name: "EUROPA CONTAINER"},
-                {lat: 35.7, lng: 139.7, name: "PACIFIC TANKER"}
-            ];
+        window.loadAllData = function() {
+            document.getElementById('status').textContent = 'Loading real maritime data...';
+            loadShipsData();
+            loadIncidentsData();
+        };
+        
+        function loadShipsData() {
+            fetch('ships-data.json')
+                .then(function(response) { return response.json(); })
+                .then(function(data) {
+                    shipsData = data;
+                    displayShips();
+                    updateTimestamp(data.updated);
+                    document.getElementById('status').textContent = '✅ Real data loaded';
+                })
+                .catch(function(error) {
+                    console.error('Error loading ships:', error);
+                    document.getElementById('status').textContent = '⚠️ Using sample data (real data pending)';
+                    loadSampleShips();
+                });
+        }
+        
+        function loadIncidentsData() {
+            fetch('incidents-data.json')
+                .then(function(response) { return response.json(); })
+                .then(function(data) {
+                    incidentsData = data;
+                    displayIncidents();
+                })
+                .catch(function(error) {
+                    console.error('Error loading incidents:', error);
+                    loadSampleIncidents();
+                });
+        }
+        
+        function displayShips() {
+            // Clear old markers
+            shipMarkers.forEach(function(m) { map.removeLayer(m); });
+            shipMarkers = [];
             
-            ships.forEach(function(ship) {
+            if (!shipsData || !shipsData.ships || shipsData.ships.length === 0) {
+                document.getElementById('shipCount').textContent = '0';
+                return;
+            }
+            
+            var count = 0;
+            shipsData.ships.forEach(function(ship) {
+                if (!ship.lat || !ship.lng) return;
+                
                 var marker = L.circleMarker([ship.lat, ship.lng], {
-                    radius: 8,
+                    radius: 6,
                     fillColor: '#00d4ff',
                     color: '#00d4ff',
                     weight: 2,
                     opacity: 1,
                     fillOpacity: 0.8
-                }).addTo(map);
+                });
                 
-                marker.bindPopup('<b>🚢 ' + ship.name + '</b><br>Sample vessel');
+                var popup = '<b>🚢 ' + (ship.name || 'Unknown Vessel') + '</b><br>';
+                if (ship.type) popup += 'Type: ' + ship.type + '<br>';
+                if (ship.speed) popup += 'Speed: ' + ship.speed + ' kn<br>';
+                if (ship.destination) popup += 'Dest: ' + ship.destination + '<br>';
+                if (ship.mmsi) popup += 'MMSI: ' + ship.mmsi + '<br>';
+                popup += '<small>Live AIS data</small>';
+                
+                marker.bindPopup(popup);
+                
+                if (showShips) marker.addTo(map);
                 shipMarkers.push(marker);
+                count++;
             });
             
-            // Add sample incidents
-            var incidents = [
-                {lat: 12.5, lng: 43.5, type: "Piracy Attempt"},
-                {lat: 6.0, lng: 80.0, type: "Suspicious Activity"}
-            ];
+            document.getElementById('shipCount').textContent = count;
+        }
+        
+        function displayIncidents() {
+            // Clear old markers
+            incidentMarkers.forEach(function(m) { map.removeLayer(m); });
+            incidentMarkers = [];
             
-            incidents.forEach(function(inc) {
+            if (!incidentsData || !incidentsData.incidents || incidentsData.incidents.length === 0) {
+                document.getElementById('incidentCount').textContent = '0';
+                return;
+            }
+            
+            var count = 0;
+            incidentsData.incidents.forEach(function(inc) {
+                if (!inc.lat || !inc.lng) return;
+                
                 var marker = L.circleMarker([inc.lat, inc.lng], {
                     radius: 8,
                     fillColor: '#ff3333',
@@ -160,98 +295,75 @@
                     weight: 2,
                     opacity: 1,
                     fillOpacity: 0.7
-                }).addTo(map);
+                });
                 
-                marker.bindPopup('<b>⚠️ ' + inc.type + '</b><br>Maritime incident');
+                var popup = '<b>⚠️ ' + (inc.type || 'Incident') + '</b><br>';
+                if (inc.date) popup += 'Date: ' + inc.date + '<br>';
+                if (inc.victim) popup += 'Victim: ' + inc.victim + '<br>';
+                if (inc.description) popup += inc.description.substring(0, 100) + '...<br>';
+                if (inc.reference) popup += '<small>Ref: ' + inc.reference + '</small>';
+                
+                marker.bindPopup(popup);
+                
+                if (showIncidents) marker.addTo(map);
                 incidentMarkers.push(marker);
+                count++;
             });
             
-            document.getElementById('shipCount').textContent = ships.length;
-            document.getElementById('incidentCount').textContent = incidents.length;
+            document.getElementById('incidentCount').textContent = count;
         }
         
-        window.updateShips = function() {
-            if (!map) {
-                alert('Map not loaded yet');
-                return;
-            }
+        window.toggleShips = function() {
+            showShips = !showShips;
+            var btn = document.getElementById('toggleShips');
+            btn.textContent = showShips ? 'SHIPS: ON' : 'SHIPS: OFF';
+            btn.className = showShips ? 'btn' : 'btn toggle-off';
             
-            document.getElementById('status').textContent = 'Updating ships...';
-            
-            // Clear old markers
-            shipMarkers.forEach(function(m) { map.removeLayer(m); });
-            shipMarkers = [];
-            
-            // Add new random ships
-            setTimeout(function() {
-                var count = 5 + Math.floor(Math.random() * 5);
-                
-                for (var i = 0; i < count; i++) {
-                    var lat = (Math.random() - 0.5) * 140;
-                    var lng = (Math.random() - 0.5) * 360;
-                    
-                    var marker = L.circleMarker([lat, lng], {
-                        radius: 8,
-                        fillColor: '#00d4ff',
-                        color: '#00d4ff',
-                        weight: 2,
-                        opacity: 1,
-                        fillOpacity: 0.8
-                    }).addTo(map);
-                    
-                    marker.bindPopup('<b>🚢 VESSEL ' + (i+1) + '</b><br>Updated position');
-                    shipMarkers.push(marker);
-                }
-                
-                document.getElementById('shipCount').textContent = count;
-                document.getElementById('status').textContent = '✅ Ships updated';
-            }, 1000);
+            shipMarkers.forEach(function(m) {
+                if (showShips) map.addLayer(m);
+                else map.removeLayer(m);
+            });
         };
         
-        window.updateIncidents = function() {
-            if (!map) {
-                alert('Map not loaded yet');
-                return;
-            }
+        window.toggleIncidents = function() {
+            showIncidents = !showIncidents;
+            var btn = document.getElementById('toggleIncidents');
+            btn.textContent = showIncidents ? 'INCIDENTS: ON' : 'INCIDENTS: OFF';
+            btn.className = showIncidents ? 'btn' : 'btn toggle-off';
             
-            document.getElementById('status').textContent = 'Updating incidents...';
-            
-            // Clear old markers
-            incidentMarkers.forEach(function(m) { map.removeLayer(m); });
-            incidentMarkers = [];
-            
-            // Add new incidents
-            setTimeout(function() {
-                var hotspots = [
-                    {lat: 12, lng: 45},
-                    {lat: 6, lng: 80},
-                    {lat: -2, lng: 48}
-                ];
-                
-                var count = 2 + Math.floor(Math.random() * 4);
-                
-                for (var i = 0; i < count; i++) {
-                    var spot = hotspots[Math.floor(Math.random() * hotspots.length)];
-                    var lat = spot.lat + (Math.random() - 0.5) * 5;
-                    var lng = spot.lng + (Math.random() - 0.5) * 8;
-                    
-                    var marker = L.circleMarker([lat, lng], {
-                        radius: 8,
-                        fillColor: '#ff3333',
-                        color: '#ff3333',
-                        weight: 2,
-                        opacity: 1,
-                        fillOpacity: 0.7
-                    }).addTo(map);
-                    
-                    marker.bindPopup('<b>⚠️ INCIDENT</b><br>Maritime security event');
-                    incidentMarkers.push(marker);
-                }
-                
-                document.getElementById('incidentCount').textContent = count;
-                document.getElementById('status').textContent = '✅ Incidents updated';
-            }, 1000);
+            incidentMarkers.forEach(function(m) {
+                if (showIncidents) map.addLayer(m);
+                else map.removeLayer(m);
+            });
         };
+        
+        function loadSampleShips() {
+            shipsData = {
+                ships: [
+                    {lat: 40.7, lng: -74.0, name: "SAMPLE CARGO", type: "Cargo", speed: "12.3"},
+                    {lat: 51.5, lng: -0.1, name: "SAMPLE CONTAINER", type: "Container", speed: "18.5"},
+                    {lat: 35.7, lng: 139.7, name: "SAMPLE TANKER", type: "Tanker", speed: "14.2"}
+                ]
+            };
+            displayShips();
+        }
+        
+        function loadSampleIncidents() {
+            incidentsData = {
+                incidents: [
+                    {lat: 12.5, lng: 43.5, type: "Piracy", date: "2026-02-03", description: "Sample incident"},
+                    {lat: 6.0, lng: 80.0, type: "Suspicious Activity", date: "2026-02-02", description: "Sample incident"}
+                ]
+            };
+            displayIncidents();
+        }
+        
+        function updateTimestamp(isoTime) {
+            if (!isoTime) return;
+            var date = new Date(isoTime);
+            document.getElementById('lastUpdate').textContent = 
+                date.toLocaleTimeString('en-US', {hour: '2-digit', minute: '2-digit'});
+        }
     </script>
 </body>
 </html>
