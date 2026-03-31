@@ -1,167 +1,167 @@
 {
-  "updated": "2026-03-30T23:38:26.569117",
+  "updated": "2026-03-31T02:39:33.711051",
   "incidents": [
     {
-      "date": "2026-03-26",
-      "lat": 0.2413,
-      "lng": 103.1454,
-      "type": "Theft",
-      "region": "Singapore Strait",
-      "description": "Stores stolen from deck during hours of darkness.",
-      "reference": "REF-20260326-018"
-    },
-    {
-      "date": "2026-03-25",
-      "lat": -0.0973,
-      "lng": 105.554,
-      "type": "Boarding",
-      "region": "Singapore Strait",
-      "description": "Unauthorized persons boarded vessel.",
-      "reference": "REF-20260325-003"
-    },
-    {
-      "date": "2026-03-24",
-      "lat": 0.428,
-      "lng": 105.8402,
-      "type": "Boarding",
-      "region": "Singapore Strait",
-      "description": "Unauthorized persons boarded vessel.",
-      "reference": "REF-20260324-007"
-    },
-    {
       "date": "2026-03-16",
-      "lat": 11.5717,
-      "lng": 113.6455,
-      "type": "Suspicious Activity",
+      "lat": 4.3218,
+      "lng": 3.9923,
+      "type": "Piracy",
+      "region": "Gulf of Guinea",
+      "description": "Vessel approached by armed skiffs. Evasive maneuvers taken.",
+      "reference": "REF-20260316-014"
+    },
+    {
+      "date": "2026-03-06",
+      "lat": 4.5502,
+      "lng": 4.2195,
+      "type": "Armed Robbery",
+      "region": "Gulf of Guinea",
+      "description": "Unauthorized boarding while at anchor. Items stolen from deck.",
+      "reference": "REF-20260306-018"
+    },
+    {
+      "date": "2026-03-05",
+      "lat": 10.7314,
+      "lng": 113.0011,
+      "type": "Harassment",
       "region": "South China Sea",
-      "description": "Maritime security incident reported.",
-      "reference": "REF-20260316-002"
+      "description": "Vessel harassed by military/paramilitary craft.",
+      "reference": "REF-20260305-001"
     },
     {
-      "date": "2026-03-15",
-      "lat": 14.4848,
-      "lng": 46.9937,
-      "type": "Suspicious Approach",
-      "region": "Gulf of Aden",
-      "description": "Unknown vessels approached at high speed. Watchkeeping increased.",
-      "reference": "REF-20260315-013"
-    },
-    {
-      "date": "2026-03-12",
-      "lat": 0.2349,
-      "lng": 105.6744,
-      "type": "Theft",
-      "region": "Singapore Strait",
-      "description": "Stores stolen from deck during hours of darkness.",
-      "reference": "REF-20260312-001"
-    },
-    {
-      "date": "2026-03-11",
-      "lat": 7.215,
-      "lng": 49.1219,
-      "type": "Piracy",
-      "region": "Somalia Coast",
-      "description": "Vessel approached by armed skiffs. Evasive maneuvers taken.",
-      "reference": "REF-20260311-012"
-    },
-    {
-      "date": "2026-03-08",
-      "lat": 2.3393,
-      "lng": 104.5844,
-      "type": "Theft",
-      "region": "Singapore Strait",
-      "description": "Stores stolen from deck during hours of darkness.",
-      "reference": "REF-20260308-009"
-    },
-    {
-      "date": "2026-03-07",
-      "lat": 5.1832,
-      "lng": 8.9629,
-      "type": "Kidnapping",
-      "region": "Nigeria Coast",
-      "description": "Crew members taken. Authorities notified.",
-      "reference": "REF-20260307-016"
-    },
-    {
-      "date": "2026-03-03",
-      "lat": 5.4439,
-      "lng": 49.3903,
-      "type": "Piracy",
-      "region": "Somalia Coast",
-      "description": "Vessel approached by armed skiffs. Evasive maneuvers taken.",
-      "reference": "REF-20260303-015"
-    },
-    {
-      "date": "2026-02-28",
-      "lat": 5.8903,
-      "lng": 6.7336,
-      "type": "Kidnapping",
-      "region": "Nigeria Coast",
-      "description": "Crew members taken. Authorities notified.",
-      "reference": "REF-20260228-008"
-    },
-    {
-      "date": "2026-02-24",
-      "lat": 7.0568,
-      "lng": 49.8206,
+      "date": "2026-03-05",
+      "lat": 4.1389,
+      "lng": 50.1289,
       "type": "Hijacking",
       "region": "Somalia Coast",
       "description": "Vessel boarded and taken control of by armed persons.",
-      "reference": "REF-20260224-006"
+      "reference": "REF-20260305-015"
+    },
+    {
+      "date": "2026-03-04",
+      "lat": 3.8357,
+      "lng": 7.8263,
+      "type": "Armed Robbery",
+      "region": "Nigeria Coast",
+      "description": "Unauthorized boarding while at anchor. Items stolen from deck.",
+      "reference": "REF-20260304-017"
+    },
+    {
+      "date": "2026-03-02",
+      "lat": 0.485,
+      "lng": 103.4879,
+      "type": "Boarding",
+      "region": "Singapore Strait",
+      "description": "Unauthorized persons boarded vessel.",
+      "reference": "REF-20260302-002"
+    },
+    {
+      "date": "2026-02-28",
+      "lat": 14.3717,
+      "lng": 44.5116,
+      "type": "Armed Robbery",
+      "region": "Gulf of Aden",
+      "description": "Unauthorized boarding while at anchor. Items stolen from deck.",
+      "reference": "REF-20260228-003"
+    },
+    {
+      "date": "2026-02-23",
+      "lat": 2.7893,
+      "lng": 100.083,
+      "type": "Armed Robbery",
+      "region": "Strait of Malacca",
+      "description": "Unauthorized boarding while at anchor. Items stolen from deck.",
+      "reference": "REF-20260223-010"
+    },
+    {
+      "date": "2026-02-21",
+      "lat": 2.2829,
+      "lng": 3.1986,
+      "type": "Armed Robbery",
+      "region": "Gulf of Guinea",
+      "description": "Unauthorized boarding while at anchor. Items stolen from deck.",
+      "reference": "REF-20260221-006"
+    },
+    {
+      "date": "2026-02-21",
+      "lat": 14.4387,
+      "lng": 46.3952,
+      "type": "Armed Robbery",
+      "region": "Gulf of Aden",
+      "description": "Unauthorized boarding while at anchor. Items stolen from deck.",
+      "reference": "REF-20260221-007"
     },
     {
       "date": "2026-02-15",
-      "lat": 3.044,
-      "lng": 7.8248,
+      "lat": 5.8046,
+      "lng": 3.1986,
+      "type": "Piracy",
+      "region": "Gulf of Guinea",
+      "description": "Vessel approached by armed skiffs. Evasive maneuvers taken.",
+      "reference": "REF-20260215-008"
+    },
+    {
+      "date": "2026-02-12",
+      "lat": 7.9987,
+      "lng": 50.8688,
+      "type": "Hijacking",
+      "region": "Somalia Coast",
+      "description": "Vessel boarded and taken control of by armed persons.",
+      "reference": "REF-20260212-009"
+    },
+    {
+      "date": "2026-02-11",
+      "lat": 5.4094,
+      "lng": 6.0767,
       "type": "Armed Robbery",
       "region": "Nigeria Coast",
       "description": "Unauthorized boarding while at anchor. Items stolen from deck.",
-      "reference": "REF-20260215-005"
+      "reference": "REF-20260211-011"
     },
     {
       "date": "2026-02-10",
-      "lat": 7.8535,
-      "lng": 49.767,
-      "type": "Piracy",
-      "region": "Somalia Coast",
-      "description": "Vessel approached by armed skiffs. Evasive maneuvers taken.",
-      "reference": "REF-20260210-010"
+      "lat": 1.4261,
+      "lng": 102.679,
+      "type": "Theft",
+      "region": "Strait of Malacca",
+      "description": "Stores stolen from deck during hours of darkness.",
+      "reference": "REF-20260210-016"
     },
     {
-      "date": "2026-02-09",
-      "lat": 11.2889,
-      "lng": 42.2432,
+      "date": "2026-02-07",
+      "lat": 11.7501,
+      "lng": 42.6853,
+      "type": "Piracy",
+      "region": "Gulf of Aden",
+      "description": "Vessel approached by armed skiffs. Evasive maneuvers taken.",
+      "reference": "REF-20260207-005"
+    },
+    {
+      "date": "2026-02-04",
+      "lat": 8.2165,
+      "lng": 114.8991,
+      "type": "Suspicious Activity",
+      "region": "South China Sea",
+      "description": "Maritime security incident reported.",
+      "reference": "REF-20260204-012"
+    },
+    {
+      "date": "2026-02-01",
+      "lat": 14.2445,
+      "lng": 47.5587,
       "type": "Armed Robbery",
       "region": "Gulf of Aden",
       "description": "Unauthorized boarding while at anchor. Items stolen from deck.",
-      "reference": "REF-20260209-014"
+      "reference": "REF-20260201-004"
     },
     {
-      "date": "2026-02-05",
-      "lat": 13.4618,
-      "lng": 42.1155,
-      "type": "Piracy",
-      "region": "Gulf of Aden",
-      "description": "Vessel approached by armed skiffs. Evasive maneuvers taken.",
-      "reference": "REF-20260205-004"
-    },
-    {
-      "date": "2026-02-05",
-      "lat": 1.504,
-      "lng": 104.962,
-      "type": "Theft",
-      "region": "Singapore Strait",
-      "description": "Stores stolen from deck during hours of darkness.",
-      "reference": "REF-20260205-017"
-    },
-    {
-      "date": "2026-02-03",
-      "lat": 4.3363,
-      "lng": 7.324,
-      "type": "Kidnapping",
-      "region": "Nigeria Coast",
-      "description": "Crew members taken. Authorities notified.",
-      "reference": "REF-20260203-011"
+      "date": "2026-02-01",
+      "lat": 2.9834,
+      "lng": 7.808,
+      "type": "Armed Robbery",
+      "region": "Gulf of Guinea",
+      "description": "Unauthorized boarding while at anchor. Items stolen from deck.",
+      "reference": "REF-20260201-013"
     }
   ],
   "source": "Maritime Security Hotspot Data"
