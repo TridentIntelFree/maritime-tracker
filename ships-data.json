@@ -1,5 +1,1286 @@
 {
-  "updated": "2026-04-18T15:06:41.006512",
-  "ships": [],
+  "updated": "2026-04-18T16:04:04.843759",
+  "ships": [
+    {
+      "name": "CHEMICAL TANKER 662",
+      "mmsi": "565440866",
+      "lat": 50.5219,
+      "lng": -0.8133,
+      "speed": 8.4,
+      "course": 230,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 710",
+      "mmsi": "770233921",
+      "lat": 49.6052,
+      "lng": 0.4734,
+      "speed": 12.0,
+      "course": 254,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 387",
+      "mmsi": "662309935",
+      "lat": 50.4742,
+      "lng": -0.0695,
+      "speed": 15.7,
+      "course": 346,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 317",
+      "mmsi": "421883083",
+      "lat": 50.3797,
+      "lng": -0.5388,
+      "speed": 12.1,
+      "course": 328,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 358",
+      "mmsi": "703516070",
+      "lat": 50.9266,
+      "lng": -0.8615,
+      "speed": 9.7,
+      "course": 100,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 218",
+      "mmsi": "438877945",
+      "lat": 51.1111,
+      "lng": 0.9632,
+      "speed": 16.9,
+      "course": 320,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 545",
+      "mmsi": "784937266",
+      "lat": 49.6543,
+      "lng": 1.0245,
+      "speed": 10.6,
+      "course": 80,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 553",
+      "mmsi": "438112222",
+      "lat": 51.364,
+      "lng": -0.2366,
+      "speed": 14.6,
+      "course": 20,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 602",
+      "mmsi": "690342029",
+      "lat": 50.8449,
+      "lng": -0.6235,
+      "speed": 8.1,
+      "course": 16,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 139",
+      "mmsi": "692015064",
+      "lat": 50.4533,
+      "lng": -0.3164,
+      "speed": 17.3,
+      "course": 81,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 540",
+      "mmsi": "529434347",
+      "lat": 51.0892,
+      "lng": 0.5503,
+      "speed": 10.9,
+      "course": 309,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 467",
+      "mmsi": "340846296",
+      "lat": 49.9028,
+      "lng": 0.7223,
+      "speed": 12.4,
+      "course": 165,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 981",
+      "mmsi": "320687594",
+      "lat": 50.6151,
+      "lng": 0.5349,
+      "speed": 16.1,
+      "course": 251,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 705",
+      "mmsi": "622808639",
+      "lat": 49.8425,
+      "lng": -1.0351,
+      "speed": 12.9,
+      "course": 174,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 791",
+      "mmsi": "746485772",
+      "lat": 50.2284,
+      "lng": -0.8145,
+      "speed": 17.4,
+      "course": 213,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 852",
+      "mmsi": "242054963",
+      "lat": 35.8313,
+      "lng": -6.8895,
+      "speed": 17.8,
+      "course": 47,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 148",
+      "mmsi": "544375957",
+      "lat": 36.703,
+      "lng": -6.6844,
+      "speed": 15.7,
+      "course": 301,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 531",
+      "mmsi": "766965543",
+      "lat": 35.3801,
+      "lng": -5.4645,
+      "speed": 15.0,
+      "course": 342,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 796",
+      "mmsi": "264513627",
+      "lat": 35.5785,
+      "lng": -5.6842,
+      "speed": 11.5,
+      "course": 164,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 558",
+      "mmsi": "382383611",
+      "lat": 35.8458,
+      "lng": -4.039,
+      "speed": 16.6,
+      "course": 171,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 882",
+      "mmsi": "202931953",
+      "lat": 36.9882,
+      "lng": -6.1209,
+      "speed": 14.5,
+      "course": 236,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 829",
+      "mmsi": "748951420",
+      "lat": 36.4898,
+      "lng": -6.837,
+      "speed": 12.8,
+      "course": 354,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 390",
+      "mmsi": "585147793",
+      "lat": 35.2668,
+      "lng": -4.8778,
+      "speed": 10.5,
+      "course": 29,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 480",
+      "mmsi": "750964162",
+      "lat": 36.9551,
+      "lng": -4.8169,
+      "speed": 10.5,
+      "course": 353,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 265",
+      "mmsi": "247256006",
+      "lat": 36.5255,
+      "lng": -4.6593,
+      "speed": 15.9,
+      "course": 276,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 127",
+      "mmsi": "509601106",
+      "lat": 29.8207,
+      "lng": 33.5072,
+      "speed": 12.1,
+      "course": 134,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 347",
+      "mmsi": "501614635",
+      "lat": 30.997,
+      "lng": 32.4511,
+      "speed": 15.1,
+      "course": 145,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 431",
+      "mmsi": "588846556",
+      "lat": 29.5854,
+      "lng": 31.7931,
+      "speed": 16.6,
+      "course": 244,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 759",
+      "mmsi": "317603905",
+      "lat": 30.9552,
+      "lng": 32.331,
+      "speed": 9.6,
+      "course": 103,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 406",
+      "mmsi": "678497571",
+      "lat": 31.4916,
+      "lng": 31.9146,
+      "speed": 9.4,
+      "course": 249,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 574",
+      "mmsi": "244227598",
+      "lat": 30.057,
+      "lng": 31.5868,
+      "speed": 13.6,
+      "course": 32,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 267",
+      "mmsi": "636890474",
+      "lat": 30.9755,
+      "lng": 33.0754,
+      "speed": 8.3,
+      "course": 24,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 439",
+      "mmsi": "484020653",
+      "lat": 31.3566,
+      "lng": 31.8312,
+      "speed": 13.5,
+      "course": 334,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 526",
+      "mmsi": "325622822",
+      "lat": 29.8369,
+      "lng": 32.7102,
+      "speed": 15.3,
+      "course": 85,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 598",
+      "mmsi": "218336073",
+      "lat": 29.6278,
+      "lng": 30.8821,
+      "speed": 13.8,
+      "course": 27,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 349",
+      "mmsi": "317763414",
+      "lat": 31.0764,
+      "lng": 31.3587,
+      "speed": 14.7,
+      "course": 105,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 168",
+      "mmsi": "509875079",
+      "lat": 30.1111,
+      "lng": 33.3756,
+      "speed": 14.8,
+      "course": 190,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 109",
+      "mmsi": "692138336",
+      "lat": 2.3419,
+      "lng": 101.2659,
+      "speed": 16.4,
+      "course": 256,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 948",
+      "mmsi": "394508004",
+      "lat": 2.3835,
+      "lng": 101.9948,
+      "speed": 8.6,
+      "course": 309,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 495",
+      "mmsi": "643375411",
+      "lat": 2.6788,
+      "lng": 100.3787,
+      "speed": 16.7,
+      "course": 301,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 372",
+      "mmsi": "549875729",
+      "lat": 3.3202,
+      "lng": 101.4712,
+      "speed": 16.9,
+      "course": 145,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 217",
+      "mmsi": "565398583",
+      "lat": 2.55,
+      "lng": 102.3888,
+      "speed": 17.7,
+      "course": 21,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 423",
+      "mmsi": "300535466",
+      "lat": 1.9927,
+      "lng": 101.9525,
+      "speed": 17.5,
+      "course": 244,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 330",
+      "mmsi": "349102636",
+      "lat": 1.9559,
+      "lng": 101.6745,
+      "speed": 14.3,
+      "course": 118,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 213",
+      "mmsi": "592460395",
+      "lat": 3.137,
+      "lng": 100.0876,
+      "speed": 17.8,
+      "course": 185,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 163",
+      "mmsi": "780500938",
+      "lat": 3.4097,
+      "lng": 100.1651,
+      "speed": 16.4,
+      "course": 151,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 794",
+      "mmsi": "792620929",
+      "lat": 1.69,
+      "lng": 101.7064,
+      "speed": 10.4,
+      "course": 93,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 868",
+      "mmsi": "467480129",
+      "lat": 1.8941,
+      "lng": 100.939,
+      "speed": 11.2,
+      "course": 106,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 938",
+      "mmsi": "288180173",
+      "lat": 1.9666,
+      "lng": 101.7859,
+      "speed": 16.2,
+      "course": 184,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 934",
+      "mmsi": "266884526",
+      "lat": 2.8951,
+      "lng": 99.6781,
+      "speed": 13.2,
+      "course": 153,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 923",
+      "mmsi": "790624016",
+      "lat": 3.3204,
+      "lng": 100.1651,
+      "speed": 10.8,
+      "course": 339,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 136",
+      "mmsi": "404676423",
+      "lat": 1.7228,
+      "lng": 99.5855,
+      "speed": 9.1,
+      "course": 112,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 387",
+      "mmsi": "727190042",
+      "lat": 1.774,
+      "lng": 100.2866,
+      "speed": 13.3,
+      "course": 321,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 212",
+      "mmsi": "700527000",
+      "lat": 2.812,
+      "lng": 99.9671,
+      "speed": 16.1,
+      "course": 294,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 509",
+      "mmsi": "344532630",
+      "lat": 1.8206,
+      "lng": 102.3019,
+      "speed": 11.1,
+      "course": 50,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 352",
+      "mmsi": "610755055",
+      "lat": 9.1804,
+      "lng": -79.3686,
+      "speed": 13.3,
+      "course": 193,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 585",
+      "mmsi": "738889795",
+      "lat": 8.0612,
+      "lng": -78.2021,
+      "speed": 8.9,
+      "course": 324,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 215",
+      "mmsi": "795895271",
+      "lat": 8.009,
+      "lng": -79.9562,
+      "speed": 9.5,
+      "course": 53,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 804",
+      "mmsi": "532039708",
+      "lat": 8.4422,
+      "lng": -80.8426,
+      "speed": 15.0,
+      "course": 113,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 970",
+      "mmsi": "313423082",
+      "lat": 9.0945,
+      "lng": -78.9996,
+      "speed": 15.3,
+      "course": 1,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 841",
+      "mmsi": "291280915",
+      "lat": 8.0915,
+      "lng": -80.9689,
+      "speed": 11.6,
+      "course": 9,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 827",
+      "mmsi": "750211514",
+      "lat": 8.8543,
+      "lng": -79.0459,
+      "speed": 15.6,
+      "course": 120,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 669",
+      "mmsi": "760387980",
+      "lat": 8.7922,
+      "lng": -78.5551,
+      "speed": 12.4,
+      "course": 164,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 314",
+      "mmsi": "385501616",
+      "lat": 1.2136,
+      "lng": 105.4211,
+      "speed": 17.4,
+      "course": 308,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 722",
+      "mmsi": "723022050",
+      "lat": 1.843,
+      "lng": 102.8793,
+      "speed": 10.1,
+      "course": 196,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 765",
+      "mmsi": "397019226",
+      "lat": 2.2631,
+      "lng": 102.8384,
+      "speed": 9.8,
+      "course": 231,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 635",
+      "mmsi": "508127584",
+      "lat": 1.7161,
+      "lng": 104.9249,
+      "speed": 9.5,
+      "course": 159,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 801",
+      "mmsi": "241607415",
+      "lat": 0.4088,
+      "lng": 103.0313,
+      "speed": 9.4,
+      "course": 335,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 600",
+      "mmsi": "283273133",
+      "lat": 0.8969,
+      "lng": 102.68,
+      "speed": 12.2,
+      "course": 238,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 174",
+      "mmsi": "527782295",
+      "lat": 1.9673,
+      "lng": 104.9324,
+      "speed": 11.5,
+      "course": 219,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 458",
+      "mmsi": "435553420",
+      "lat": 1.9814,
+      "lng": 103.4912,
+      "speed": 17.4,
+      "course": 134,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 841",
+      "mmsi": "211524498",
+      "lat": 0.517,
+      "lng": 103.6288,
+      "speed": 14.1,
+      "course": 243,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 687",
+      "mmsi": "376293132",
+      "lat": 1.4866,
+      "lng": 104.0007,
+      "speed": 10.6,
+      "course": 157,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 235",
+      "mmsi": "253685441",
+      "lat": 1.3991,
+      "lng": 102.7304,
+      "speed": 9.5,
+      "course": 57,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 110",
+      "mmsi": "656945751",
+      "lat": 1.0433,
+      "lng": 102.567,
+      "speed": 11.5,
+      "course": 147,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 829",
+      "mmsi": "525214288",
+      "lat": 1.6344,
+      "lng": 105.0118,
+      "speed": 11.1,
+      "course": 264,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 619",
+      "mmsi": "366692028",
+      "lat": 0.6863,
+      "lng": 103.1363,
+      "speed": 12.9,
+      "course": 166,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 238",
+      "mmsi": "301288885",
+      "lat": 1.7032,
+      "lng": 103.4292,
+      "speed": 17.7,
+      "course": 230,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 897",
+      "mmsi": "382345628",
+      "lat": 1.5183,
+      "lng": 103.169,
+      "speed": 15.9,
+      "course": 260,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 799",
+      "mmsi": "232331014",
+      "lat": 1.545,
+      "lng": 104.4245,
+      "speed": 15.5,
+      "course": 323,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 446",
+      "mmsi": "223296456",
+      "lat": 1.2291,
+      "lng": 104.1659,
+      "speed": 13.5,
+      "course": 300,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 543",
+      "mmsi": "666009153",
+      "lat": 0.608,
+      "lng": 102.705,
+      "speed": 16.8,
+      "course": 221,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 404",
+      "mmsi": "764378095",
+      "lat": 0.9961,
+      "lng": 102.9258,
+      "speed": 13.9,
+      "course": 350,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 445",
+      "mmsi": "753032003",
+      "lat": 51.7679,
+      "lng": 0.0714,
+      "speed": 9.6,
+      "course": 312,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 606",
+      "mmsi": "530168453",
+      "lat": 50.3354,
+      "lng": 0.0063,
+      "speed": 10.3,
+      "course": 276,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 808",
+      "mmsi": "325831788",
+      "lat": 51.3685,
+      "lng": 2.5996,
+      "speed": 12.8,
+      "course": 286,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 123",
+      "mmsi": "608154902",
+      "lat": 50.782,
+      "lng": 0.5395,
+      "speed": 8.9,
+      "course": 142,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 830",
+      "mmsi": "439824915",
+      "lat": 50.5028,
+      "lng": 1.6281,
+      "speed": 15.1,
+      "course": 136,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 904",
+      "mmsi": "482672582",
+      "lat": 51.4745,
+      "lng": 2.9469,
+      "speed": 10.5,
+      "course": 207,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 787",
+      "mmsi": "324558836",
+      "lat": 51.8853,
+      "lng": 1.1976,
+      "speed": 17.1,
+      "course": 72,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 806",
+      "mmsi": "757787642",
+      "lat": 50.7546,
+      "lng": 2.005,
+      "speed": 11.0,
+      "course": 206,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 388",
+      "mmsi": "722251251",
+      "lat": 51.3541,
+      "lng": 1.0503,
+      "speed": 15.2,
+      "course": 150,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 432",
+      "mmsi": "435389793",
+      "lat": 51.6087,
+      "lng": 1.0704,
+      "speed": 10.2,
+      "course": 318,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 671",
+      "mmsi": "338388025",
+      "lat": 50.9567,
+      "lng": 1.6327,
+      "speed": 13.7,
+      "course": 213,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 143",
+      "mmsi": "646447127",
+      "lat": 50.1851,
+      "lng": 1.7854,
+      "speed": 16.9,
+      "course": 295,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 408",
+      "mmsi": "339684064",
+      "lat": 13.026,
+      "lng": 46.1628,
+      "speed": 16.0,
+      "course": 266,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 448",
+      "mmsi": "433079143",
+      "lat": 12.3732,
+      "lng": 46.1997,
+      "speed": 8.9,
+      "course": 315,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 349",
+      "mmsi": "482281668",
+      "lat": 13.318,
+      "lng": 46.3084,
+      "speed": 16.2,
+      "course": 317,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 817",
+      "mmsi": "374603490",
+      "lat": 13.1425,
+      "lng": 44.3811,
+      "speed": 17.5,
+      "course": 56,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 269",
+      "mmsi": "432491805",
+      "lat": 12.7042,
+      "lng": 45.4167,
+      "speed": 10.6,
+      "course": 291,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 145",
+      "mmsi": "206732566",
+      "lat": 12.0669,
+      "lng": 43.7516,
+      "speed": 9.6,
+      "course": 5,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 213",
+      "mmsi": "632801151",
+      "lat": 11.7601,
+      "lng": 44.5566,
+      "speed": 12.4,
+      "course": 254,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 153",
+      "mmsi": "512706095",
+      "lat": 13.0948,
+      "lng": 45.2958,
+      "speed": 9.3,
+      "course": 119,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 563",
+      "mmsi": "651996788",
+      "lat": 45.925,
+      "lng": -28.8846,
+      "speed": 8.2,
+      "course": 182,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 373",
+      "mmsi": "235691613",
+      "lat": 44.4651,
+      "lng": -30.6592,
+      "speed": 15.2,
+      "course": 252,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 989",
+      "mmsi": "612609890",
+      "lat": 44.0884,
+      "lng": -29.2596,
+      "speed": 14.2,
+      "course": 97,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 980",
+      "mmsi": "275802320",
+      "lat": 44.0186,
+      "lng": -30.3276,
+      "speed": 15.0,
+      "course": 245,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 747",
+      "mmsi": "257486249",
+      "lat": 45.5035,
+      "lng": -30.765,
+      "speed": 12.8,
+      "course": 70,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 667",
+      "mmsi": "693932061",
+      "lat": 45.5034,
+      "lng": -29.7722,
+      "speed": 11.5,
+      "course": 124,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 569",
+      "mmsi": "489678466",
+      "lat": 45.4579,
+      "lng": -31.1233,
+      "speed": 12.0,
+      "course": 114,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 544",
+      "mmsi": "338290451",
+      "lat": 45.1,
+      "lng": -29.598,
+      "speed": 9.6,
+      "course": 116,
+      "type": "Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 669",
+      "mmsi": "672479066",
+      "lat": 44.7749,
+      "lng": -30.7588,
+      "speed": 13.9,
+      "course": 182,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 643",
+      "mmsi": "507360696",
+      "lat": 44.7854,
+      "lng": -31.2056,
+      "speed": 12.7,
+      "course": 87,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 696",
+      "mmsi": "359582717",
+      "lat": 15.5837,
+      "lng": 114.1402,
+      "speed": 11.2,
+      "course": 63,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 675",
+      "mmsi": "516695040",
+      "lat": 15.8725,
+      "lng": 115.9858,
+      "speed": 12.1,
+      "course": 321,
+      "type": "Chemical Tanker",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 310",
+      "mmsi": "742350833",
+      "lat": 15.8173,
+      "lng": 113.7457,
+      "speed": 17.8,
+      "course": 110,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 906",
+      "mmsi": "771034959",
+      "lat": 14.6977,
+      "lng": 115.9336,
+      "speed": 10.3,
+      "course": 226,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CARGO 996",
+      "mmsi": "221559495",
+      "lat": 15.874,
+      "lng": 115.6287,
+      "speed": 12.4,
+      "course": 326,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 204",
+      "mmsi": "276375676",
+      "lat": 15.702,
+      "lng": 115.9941,
+      "speed": 13.5,
+      "course": 161,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 197",
+      "mmsi": "203857390",
+      "lat": 14.3781,
+      "lng": 113.7525,
+      "speed": 12.7,
+      "course": 341,
+      "type": "Container",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 139",
+      "mmsi": "596877407",
+      "lat": 15.1068,
+      "lng": 116.4023,
+      "speed": 9.5,
+      "course": 52,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "TANKER 324",
+      "mmsi": "414381535",
+      "lat": 15.7404,
+      "lng": 115.3848,
+      "speed": 17.0,
+      "course": 26,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 824",
+      "mmsi": "668811398",
+      "lat": 15.8631,
+      "lng": 113.5809,
+      "speed": 8.2,
+      "course": 148,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 632",
+      "mmsi": "312269293",
+      "lat": 15.7104,
+      "lng": 114.981,
+      "speed": 9.8,
+      "course": 125,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "BULK CARRIER 761",
+      "mmsi": "776434392",
+      "lat": 15.4474,
+      "lng": 115.7866,
+      "speed": 8.2,
+      "course": 281,
+      "type": "Bulk Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CONTAINER 961",
+      "mmsi": "546038413",
+      "lat": 14.6629,
+      "lng": 115.9367,
+      "speed": 10.9,
+      "course": 91,
+      "type": "Vehicle Carrier",
+      "destination": "Various"
+    },
+    {
+      "name": "CHEMICAL TANKER 273",
+      "mmsi": "296529342",
+      "lat": 15.833,
+      "lng": 116.4792,
+      "speed": 11.3,
+      "course": 271,
+      "type": "Cargo",
+      "destination": "Various"
+    },
+    {
+      "name": "VEHICLE CARRIER 592",
+      "mmsi": "708505605",
+      "lat": 15.8666,
+      "lng": 113.7007,
+      "speed": 11.8,
+      "course": 64,
+      "type": "Container",
+      "destination": "Various"
+    }
+  ],
   "source": "Live AIS Data / Major Shipping Routes"
 }
